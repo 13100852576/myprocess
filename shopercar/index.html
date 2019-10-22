@@ -52,12 +52,12 @@
         }
 
 
-        #holder1{
+        /* #holder1{
             display: inline-block;
             margin-top:15px;
             margin-left:-914px;
             
-        }
+        } */
         .my-check-.my-check-label1{
             display: inline;
         }
@@ -410,7 +410,7 @@
                         <div class="checkbox-div1">
                         <input type="checkbox" id="checkbox-1-11" class="regular-checkbox1 selectall " /><label for="checkbox-1-11" class="my-check-label1"></label>
                         </div>
-                        </div>
+                </div>
             <span id="selectboxsmallp1" class="selectboxsmallp">全选</span>
             <span id="selectboxsmallp2" class="selectboxsmallp">商品信息</span>
             <span id="selectboxsmallp3" class="selectboxsmallp">单价</span>
@@ -430,7 +430,7 @@
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
                 <p class="shangou">【闪购】2019-10-12 00:00 恢复原价</p>
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>鞋码：37.5
@@ -464,7 +464,7 @@
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>颜色分类：电子蜡烛 （彩色）-24只
@@ -496,7 +496,7 @@
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>强力持久啫喱膏
@@ -528,7 +528,7 @@
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>开关类型：按钮开关
@@ -560,7 +560,7 @@
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>鞋码：37.5
@@ -592,7 +592,7 @@
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                <div id="editbox" >
+                <div class="editbox" >
                     <div class="editboximg"  id="editboximg">
                     </div>
                     <p>鞋码：37.5
@@ -624,7 +624,7 @@
                     <div class="selectboxContainerbox"></div>
                     <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                     <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
-                    <div id="editbox" >
+                    <div class="editbox" >
                         <div class="editboximg"  id="editboximg">
                         </div>
                         <p>鞋码：37.5
@@ -777,8 +777,8 @@
         number5:1,
         number6:1,
         }
-        var oImg=document.getElementById('editboximg');
-        var oEdit=document.getElementById('editbox');
+        var oImg=document.getElementsByClassName('editboximg');
+        var oEdit=document.getElementsByClassName('editbox');
         // var oDel=document.getElementById('selectboxContainerp5');
         var up=document.getElementsByClassName('downimg3');
         var down=document.getElementsByClassName('downimg4');
@@ -796,14 +796,37 @@
         sum[3].innerHTML=obj.number3;
         sum[4].innerHTML=obj.number4;
         sum[5].innerHTML=obj.number5;
-        oImg.onmouseover=function(){
-            oImg.className='editover';
-            oEdit.className='edithover'
+
+
+        for(var i=0;i<oImg.length;i++){
+            oImg[i].th=i;
+            oImg[i].onmouseover=function(){
+                console.log(oImg[this.th]);
+                oImg[this.th].style.backgroundImage="url(img/编辑-1@2x.png)";
+                oEdit[this.th].style.border="2px dotted #FF5A5A"
+            }
+            oImg[i].onmouseout=function(){
+                console.log(this.th);
+                oImg[this.th].style.backgroundImage="url(img/编辑-2@2x.png)";
+                oEdit[this.th].style.border="2px dotted #EEEEEE";
+            }
+           
+           
         }
-        oImg.onmouseout=function(){
-            oImg.className='editboximg';
-            oEdit.className=''
-        }
+        // for(var i=0;i<oEdit.length;i++){
+        //     oEdit[i].th=i;
+        //     oEdit[i].onmouseover=function(){
+        //         console.log(this.th)
+        //         oEdit[this.th].style.border="2px dotted #EEEEEE"
+        //     }
+        //     oEdit[i].onmouseout=function(){
+        //         console.log(this.th)
+        //         oEdit[this.th].style.border="none"
+        //     }
+        // }
+
+
+
 
         for(var i=0;i<oShop.length;i++ ){
             oShop[i].th=i;

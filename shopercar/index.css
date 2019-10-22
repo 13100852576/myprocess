@@ -1278,6 +1278,7 @@ background: transparent;
     width: 990px;
     margin: 0 auto;
     background: #F3F3F3;
+    position: relative;
 }
 #selectboxsmall span{
     float: left;
@@ -1302,29 +1303,42 @@ background: transparent;
     line-height:17px;
     display: inline-block;
 }
+#holder1{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    
+}
 #selectboxsmallp1{
-    margin-left: 39px;
-    margin-top: 13px;
+    position: absolute;
+    left: 39px;
+    top: 13px;
 }
 #selectboxsmallp2{
-    margin-left: 66px;
-    margin-top: 13px;
+    position: absolute;
+    left: 129px;
+    top: 13px;
 }
 #selectboxsmallp3{
-    margin-left: 395px;
-    margin-top: 13px;
+    position: absolute;
+    left: 572px;
+    top: 13px;
 }
 #selectboxsmallp4{
-    margin-left: 74px;
-    margin-top: 13px;
+    position: absolute;
+    left: 670px;
+    top: 13px;
 }
 #selectboxsmallp5{
-    margin-left: 86px;
-    margin-top: 13px;
+    position: absolute;
+    left: 780px;
+    top: 13px;
 }
 #selectboxsmallp6{
-    margin-left: 96px;
-    margin-top: 13px;
+    position: absolute;
+    left: 300px;
+    top: 13px;
 }
 #shoper{
     width: 990px;
@@ -1380,7 +1394,7 @@ margin-top:-80px;
     margin-left: 120px;
     margin-top: 32px;
 }
-#editbox{
+.editbox{
     width: 170px;
     height: 128px;
     margin-left: 337px;
@@ -1388,11 +1402,11 @@ margin-top:-80px;
     z-index: 10;
     position: relative;
 }
-.edithover{
+/* .edithover{
     border: 2px dotted #FF5A5A !important;
-}
-#editbox:hover{
-    border: 2px dotted #EEEEEE;
+} */
+.editbox:hover{
+    border: 2px dotted #EEEEEE ;
 }
 .selectboxContainerp2{
     width:31px;
@@ -1586,7 +1600,7 @@ top:59px;
     left:151px;
     top: 3px;
 }
-#editbox p{
+.editbox p{
     width:136px;
 height:68px;
 font-size:12px;
