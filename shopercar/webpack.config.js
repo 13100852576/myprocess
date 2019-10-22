@@ -1,5 +1,6 @@
 const HtmlPlugin =require('html-webpack-plugin');
 const path =require('path');
+const eTp=require('extract-text-webpack-plugin');
 
 module.exports={
     entry:'./src/main.js',
@@ -9,13 +10,16 @@ module.exports={
     },
     plugins:[
         new HtmlPlugin({template:'shopcar.html'}),
-
+        new eTp("index.css")
     ],
     module:{
         rules:[
             {
                 test:/\.css$/,
-                use:["style-loader","css-loader"]
+                use:eTp.extract({
+                    fallback:'style-loader',
+                    use:'css-loader'
+                })
             },
             {
                 test:/\.(png|gif|jpg)/,
