@@ -7,14 +7,370 @@
     <title>tamllvina</title>
     <link rel="stylesheet" href="index.css">
     <style>
+        #holder{
+            display: inline-block;
+            margin-top:18px;
+            margin-left:10px;
+        }
+        /* #selectboxsmall .holder1{
+            display: inline-block;
+            margin-top:14px;
+            margin-left:-914px;
+        } */
+       
+
+        .my-check-.my-check-label{
+            display: inline;
+        }
+        .regular-checkbox {
+            display: none;
+        }
+        .regular-checkbox + .my-check-label {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+        }
+        .regular-checkbox + .my-check-label:active, .regular-checkbox:checked + .my-check-label:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox:checked + .my-check-label {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox:checked + .my-check-label:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+
+        #holder1{
+            display: inline-block;
+            margin-top:15px;
+            margin-left:-914px;
+            
+        }
+        .my-check-.my-check-label1{
+            display: inline;
+        }
+        .regular-checkbox1{
+            display: none;
+        }
+        .regular-checkbox1 + .my-check-label1 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox1 + .my-check-label1:active, .regular-checkbox1:checked + .my-check-label1:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox1:checked + .my-check-label1 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox1:checked + .my-check-label1:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+
+
+        #holder2{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label2{
+            display: inline;
+        }
+        .regular-checkbox2{
+            display: none;
+        }
+        .regular-checkbox2 + .my-check-label2 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox2 + .my-check-label2:active, .regular-checkbox2:checked + .my-check-label2:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox2:checked + .my-check-label2 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox2:checked + .my-check-label2:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+
+        #holder3{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label3{
+            display: inline;
+        }
+        .regular-checkbox3{
+            display: none;
+        }
+        .regular-checkbox3 + .my-check-label3 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox3 + .my-check-label3:active, .regular-checkbox3:checked + .my-check-label3:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox3:checked + .my-check-label3 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox3:checked + .my-check-label3:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+
+        #holder4{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label4{
+            display: inline;
+        }
+        .regular-checkbox4{
+            display: none;
+        }
+        .regular-checkbox4 + .my-check-label4 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox4 + .my-check-label4:active, .regular-checkbox4:checked + .my-check-label4:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox4:checked + .my-check-label4 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox4:checked + .my-check-label4:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+        #holder5{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label5{
+            display: inline;
+        }
+        .regular-checkbox5{
+            display: none;
+        }
+        .regular-checkbox5 + .my-check-label5 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox5 + .my-check-label5:active, .regular-checkbox5:checked + .my-check-label5:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox5:checked + .my-check-label5 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox5:checked + .my-check-label5:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+
+        #holder6{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label6{
+            display: inline;
+        }
+        .regular-checkbox6{
+            display: none;
+        }
+        .regular-checkbox6 + .my-check-label6 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox6 + .my-check-label6:active, .regular-checkbox6:checked + .my-check-label6:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox6:checked + .my-check-label6 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox6:checked + .my-check-label6:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+        #holder7{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label7{
+            display: inline;
+        }
+        .regular-checkbox7{
+            display: none;
+        }
+        .regular-checkbox7 + .my-check-label7 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox7 + .my-check-label7:active, .regular-checkbox7:checked + .my-check-label7:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox7:checked + .my-check-label7 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox7:checked + .my-check-label7:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
+
+        #holder8{
+            margin-top:20px;
+            margin-left:7px;
+            
+        }
+        .my-check-.my-check-label8{
+            display: inline;
+        }
+        .regular-checkbox8{
+            display: none;
+        }
+        .regular-checkbox8 + .my-check-label8 {
+            border: 1px solid #cacece;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+        }
+        .regular-checkbox8 + .my-check-label8:active, .regular-checkbox8:checked + .my-check-label8:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .regular-checkbox8:checked + .my-check-label8 {
+            background-color: #F7432E;
+            border: 1px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+            color: #99a1a7;
+        }
+        .regular-checkbox8:checked + .my-check-label8:after {
+            content: '\2713';
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            top: -2px;
+            left: 1px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="head">
             <div id="login">
+                <div id="homeimgbox"> 
                 <img id="homeimg" src="img/主页.png" alt="">
                 <p id="tohome">回到首页</p>
+                </div>
                 <div id="loginContainer">
                     <img id="img1" src="img/电话@2x.png" alt="">
                     <span id="span1">1900 545 888</span>
@@ -50,7 +406,11 @@
         </div>
         <div id="selectbox">
         <div id="selectboxsmall">
-            <input  class='selectall' type="checkbox" name="" id="" style="background-color: #FF0000">
+                <div id="holder1">
+                        <div class="checkbox-div1">
+                        <input type="checkbox" id="checkbox-1-11" class="regular-checkbox1 selectall " /><label for="checkbox-1-11" class="my-check-label1"></label>
+                        </div>
+                        </div>
             <span id="selectboxsmallp1" class="selectboxsmallp">全选</span>
             <span id="selectboxsmallp2" class="selectboxsmallp">商品信息</span>
             <span id="selectboxsmallp3" class="selectboxsmallp">单价</span>
@@ -61,7 +421,11 @@
         </div>
         <div id="shoper">
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                <div id="holder2">
+                        <div class="checkbox-div2">
+                        <input type="checkbox" id="checkbox-1-12" class="regular-checkbox2 selectboxContainerinput" /><label for="checkbox-1-12" class="my-check-label2"></label>
+                        </div>
+                        </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -80,8 +444,9 @@
                         <span class="downp">1</span>
                         <img src="img/数量背景-2@2x.png" id="downimg2" alt="">
                         <div id="line"></div>
-                        <img src="img/数量点击-1-2@2x.png" class="downimg3" alt="">
-                        <img src="img/数量点击-2-1@2x.png" class="downimg4" alt="">
+                        <div class="downimg3">
+                        </div>
+                        <div class="downimg4"></div>
                     </div>
                 <p class="quehuo">缺货</p>
                 <p class="selectboxContainerp4">¥315</p>
@@ -91,7 +456,11 @@
 
             </div>
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                    <div id="holder3">
+                            <div class="checkbox-div3">
+                            <input type="checkbox" id="checkbox-1-13" class="regular-checkbox3 selectboxContainerinput" /><label for="checkbox-1-13" class="my-check-label3"></label>
+                            </div>
+                            </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -120,7 +489,10 @@
 
             </div>
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                <div id="holder4">
+                            <label class="checkbox-div4">
+                            <input type="checkbox" id="checkbox-1-14" class="regular-checkbox4 selectboxContainerinput" /><label for="checkbox-1-14" class="my-check-label4"></label>
+                            </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -149,7 +521,10 @@
 
             </div>
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                    <div id="holder5">
+                            <label class="checkbox-div5">
+                            <input type="checkbox" id="checkbox-1-15" class="regular-checkbox5 selectboxContainerinput" /><label for="checkbox-1-15" class="my-check-label5"></label>
+                            </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -178,7 +553,10 @@
 
             </div>
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                    <div id="holder6">
+                            <label class="checkbox-div6">
+                            <input type="checkbox" id="checkbox-1-16" class="regular-checkbox6 selectboxContainerinput" /><label for="checkbox-1-16" class="my-check-label6"></label>
+                            </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -207,7 +585,10 @@
 
             </div>
             <div class="selectboxContainer">
-                <input type="checkbox" name="" class="selectboxContainerinput">
+                <div id="holder7">
+                        <label class="checkbox-div7">
+                        <input type="checkbox" id="checkbox-1-17" class="regular-checkbox7 selectboxContainerinput" /><label for="checkbox-1-17" class="my-check-label7"></label>
+                        </div>
                 <div class="selectboxContainerbox"></div>
                 <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                 <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -236,7 +617,10 @@
 
             </div>
             <div class="selectboxContainer">
-                    <input type="checkbox" name="" class="selectboxContainerinput">
+                    <div id="holder8">
+                            <label class="checkbox-div8">
+                            <input type="checkbox" id="checkbox-1-18" class="regular-checkbox8 selectboxContainerinput" /><label for="checkbox-1-18" class="my-check-label8"></label>
+                            </div>
                     <div class="selectboxContainerbox"></div>
                     <p class="selectboxContainerp1">Jimmy has products (JIMI) intelligent temperature cup</p>
                     <img class="selectboxContainerimg1" alt="" src="img/支付@2x.png">
@@ -267,12 +651,16 @@
         </div>
             
         <div id="jiesuan">
-            <input type="checkbox" name="" id="" class='selectall'>
-            <p class="jiesuanp2">全选</p>
-            <p class="jiesuanp3" id="deletemessagedelete"><a>删除</a></p>
-            <p class="jiesuanp4">清除失效宝贝</p>
-            <p class="jiesuanp5">移入收藏夹</p>
-            <p class="jiesuanp6">分享</p>
+                <div id="holder">
+                        <div class="checkbox-div">
+                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox selectall" /><label for="checkbox-1-1" class="my-check-label"></label>
+                        </div>
+                        </div>
+            <p class="jiesuanp2 underline">全选</p>
+            <p class="jiesuanp3 underline" id="deletemessagedelete" ><a>删除</a></p>
+            <p class="jiesuanp4 underline" >清除失效宝贝</p>
+            <p class="jiesuanp5 underline" >移入收藏夹</p>
+            <p class="jiesuanp6 underline" >分享</p>
             <p class="jiesuanp7">已选择<a>0</a>件商品</p>
             <p class="jiesuanp8">总价:</p>
             <p class="jiesuanp9">¥315.00</p>
@@ -391,7 +779,7 @@
         }
         var oImg=document.getElementById('editboximg');
         var oEdit=document.getElementById('editbox');
-        var oDel=document.getElementById('selectboxContainerp5');
+        // var oDel=document.getElementById('selectboxContainerp5');
         var up=document.getElementsByClassName('downimg3');
         var down=document.getElementsByClassName('downimg4');
         var sum=document.getElementsByClassName('downp');
@@ -408,7 +796,6 @@
         sum[3].innerHTML=obj.number3;
         sum[4].innerHTML=obj.number4;
         sum[5].innerHTML=obj.number5;
-        // sum[6].innerHTML=obj.number6;
         oImg.onmouseover=function(){
             oImg.className='editover';
             oEdit.className='edithover'
@@ -417,21 +804,12 @@
             oImg.className='editboximg';
             oEdit.className=''
         }
-        oDel.onmouseover=function(){
-            oDel.className='selectboxContainerp5hover'
-        }
-        oDel.onmouseout=function(){
-            oDel.className='';
-        }
 
         for(var i=0;i<oShop.length;i++ ){
             oShop[i].th=i;
             oShop[i].onclick=function(){
-                // console.log(this);
-                // if(aSele[this.th])
                 console.log(1231)
                 console.log(aSele[this.th].checked)
-
                 if(aSele[this.th].checked==true){
                     this.style.backgroundColor="#FFF2EB"
                     this.style.border="1px solid #EF301A"

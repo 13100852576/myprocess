@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>纯CSS3实现自定义美化复选框和单选框在线演示</title>
+<style type="text/css">
+
+.my-check-.my-check-label{
+display: inline;
+}
+
+
+.regular-checkbox {
+display: none;
+}
+
+
+.regular-checkbox + .my-check-label {
+background-color: #fafafa;
+border: 1px solid #cacece;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+padding: 5px;
+border-radius: 3px;
+display: inline-block;
+position: relative;
+}
+
+
+.regular-checkbox + .my-check-label:active, .regular-checkbox:checked + .my-check-label:active {
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.regular-checkbox:checked + .my-check-label {
+background-color: #F7432E;
+border: 1px solid white;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+color: #99a1a7;
+}
+
+
+.regular-checkbox:checked + .my-check-label:after {
+content: '\2713';
+font-weight: bolder;
+font-size: 10px;
+position: absolute;
+top: -2px;
+left: 1px;
+color: white;
+
+}
+
+
+</style>
+</head>
+<body>
+<div id="holder">
+<div class="checkbox-div">
+<input type="checkbox" id="checkbox-1-1" class="regular-checkbox selectall" /><label for="checkbox-1-1" class="my-check-label"></label>
+</div>
+</div>
+</body>
+</html>

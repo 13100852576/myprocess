@@ -309,11 +309,11 @@ font-weight: 500;
     font-size: 12px;
     border: none;
 }
-#searchimg{
-    width: 64px;
-    height: 31px;
-    margin-left:334px;
-    margin-top:-31.6px;
+#searchimg {
+    width: 65px;
+    height: 27px;
+    margin-left: 332px;
+    margin-top: -30px;
     background: white;
     z-index: 10;
 }
@@ -634,7 +634,7 @@ font-weight: 500;
     width: 18px;
     height: 18px;
     position: absolute;
-    left:97.5%;
+    left:948px;
     top:52%;
 }
 #morespan{
@@ -1239,10 +1239,13 @@ background: transparent;
     color: #F7432E;
 }
 #allshop{
+    height: 12px;
     background: white;
     border-right: 1px solid #E8E8E8;
     color:#F7432E;
     padding-right:30px;
+    /* background: #3D3D3D; */
+    line-height: 12px;
 }
 #shopmessage p{
     display: inline;
@@ -1252,10 +1255,14 @@ background: transparent;
     padding-left: 23px;
     padding-right: 28px;
     border-right: 1px solid #E8E8E8;
+    height: 12px;
+    line-height: 12px;
 }
 #noshop{
     background: white;
     padding-left:24px;
+    height: 12px;
+    line-height: 12px;
 }
 #shopmessageContainer{
     height: 22px;
@@ -1275,10 +1282,11 @@ background: transparent;
 #selectboxsmall span{
     float: left;
 }
-#selectboxsmall input{
+/* #selectboxsmall input{
     float: left;
-}
-#selectboxsmall input{
+} */
+.selectall{
+    float: left;
     width:13px;
     height:13px;
     background:rgba(255,255,255,1);
@@ -1295,7 +1303,7 @@ background: transparent;
     display: inline-block;
 }
 #selectboxsmallp1{
-    margin-left: 16px;
+    margin-left: 39px;
     margin-top: 13px;
 }
 #selectboxsmallp2{
@@ -1376,7 +1384,7 @@ margin-top:-80px;
     width: 170px;
     height: 128px;
     margin-left: 337px;
-    margin-top: -54px;
+    margin-top: -58px;
     z-index: 10;
     position: relative;
 }
@@ -1384,7 +1392,7 @@ margin-top:-80px;
     border: 2px dotted #FF5A5A !important;
 }
 #editbox:hover{
-    border: 2px dotted black;
+    border: 2px dotted #EEEEEE;
 }
 .selectboxContainerp2{
     width:31px;
@@ -1446,16 +1454,37 @@ top:17px;
     height: 4px;
 }
 .downimg3{
+    /* box-sizing: border-box; */
+    background: url(img/数量点击上灰.png);
+    background-origin: content-box;
+    background-size: 6px 4px;
+    background-repeat:no-repeat;
     position: absolute;
     left:46px;
     top:2px;
     padding: 5px;
 }
+.downimg3:hover{
+    background: url(img/数量点击上红.png);
+    background-origin: content-box;
+    background-size: 6px 4px;
+    background-repeat:no-repeat;
+}
 .downimg4{
+    background: url(img/数量点击下灰.png);
+    background-origin: content-box;
+    background-size: 6px 4px;
+    background-repeat:no-repeat;
     padding: 5px;
     position: absolute;
     left:46px;
     top:20px;
+}
+.downimg4:hover{
+    background: url(img/数量点击下红.png);
+    background-origin: content-box;
+    background-size: 6px 4px;
+    background-repeat:no-repeat;
 }
 .down span{
     position: absolute;
@@ -1488,7 +1517,7 @@ top: 19px;
     left: 907px;
     top: 20px;
 }
-.selectboxContainerp5hover{
+#selectboxContainerp5:hover{
     background-image: url(img/回收箱-红色.png) !important;
 }
 .selectboxContainerp6{
@@ -1649,7 +1678,7 @@ line-height:17px;
 .jiesuanp7{
     position: absolute;
     left:640px;
-    top:17px;
+    top:9px;
     /* width:24px; */
     height:17px;
     font-size:12px;
@@ -1685,7 +1714,7 @@ line-height:25px;
 }
 .jiesuanp10{
     position: absolute;
-    left:790px;
+    left:808px;
     top:31px;
     /* width:75px; */
     height:17px;
@@ -1809,19 +1838,38 @@ color: white;
 #homeimg{
     width: 16px;
     height: 16px;
-    position: absolute;
-    left: 144px;
-    top: 9px;
+    /* margin-left:464px; */
+     margin-top:9px; 
 }
 #tohome{
-    /* width:48px; */
+    /* width:48px;  */
 height:17px;
 font-size:12px;
 font-family:PingFangSC-Medium,PingFang SC;
 font-weight:500;
 color:rgba(255,255,255,1);
 line-height:17px;
-position: absolute;
-left: 170px;
-top: 9px;
+margin-top:9px; 
+margin-left:10px;
+display: inline-block;
+}
+.underline:hover{
+    text-decoration-line: underline;
+    color: rgba(247,67,46,1);
+}
+.selectboxContainerp6:hover{
+    text-decoration-line: underline;
+    color: rgba(247,67,46,1);
+}
+.selectboxContainerp7:hover{
+    text-decoration-line: underline;
+    color: rgba(247,67,46,1);
+}
+#homeimgbox{
+    margin: 0 auto;
+    width: 990px;
+    height: 40px;
+    /* display: inline-block; */
+    /* background: black; */
+
 }
