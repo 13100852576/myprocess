@@ -1195,7 +1195,7 @@ line-height:20px;
     height: 40px;
 }
 .float:hover{
-    box-shadow: 0 0 2.5px 0.1px rgba(96,96,96,1);
+    box-shadow: 0 2px 8px 0px rgba(0,0,0,0.19);
     border-radius: 4px;
 }
 #contents4 .brand{
@@ -1417,11 +1417,8 @@ margin-top:-83px;
     z-index: 10;
     position: relative;
 }
-/* .edithover{
+.edithover{
     border: 2px dotted #FF5A5A !important;
-} */
-.editbox:hover{
-    border: 2px dotted #EEEEEE ;
 }
 .selectboxContainerp2{
     width:31px;
@@ -1807,12 +1804,25 @@ position: absolute;
 left: 11px;
 top: 6px;
 }
-#deletemessage img{
+#deletemessage div{
     width: 13px;
     height: 13px;
     position: absolute;
     left: 378px;
     top: 10px;
+    background-size: contain;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAQhJREFUKBWFkm9OwzAMxZ3mCohvrEm5xtpCuQLf4SBoKeUGkxCnGfTPBbjBaA+y4BfmirJMWIocue8X20/V67z6TG12OY37jv6JvLzbpCu71cbYC+99k6Y2maav9hxXFFXNuloRvepx3Pcrk0HrzoEADt47Bpph+HjWUGM0AY3JFD/Uoo5YF5U7dgDgUAsQLgJCICAA+hlpBqDljssQIVdbPjfHkUIHUZ5A+JDnt60nKpVS/dC/lyKWPI8nheAS0QO/1gGMmbOA/rj0iN0YPHF1hmIuwcUYGCBZXiXJC+/gZFTkGKh5pCe2uQlAt9v8BuS+AO2111f8LzHwNnS7WkSxDJBNOZCn+29X7qTL56JdXgAAAABJRU5ErkJggg==);
+    background-size: contain;
+}
+.imghoverdel{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABeUlEQVRIS72WS07DMBCGZ7xBuQISV6h7h7i3AQmBQCxomhRYVIINiNM03IFwBCS4QpIFHoRDmzR2HJukeGt7Ps0/TywFv5IEx4zB08E6W8GIpxDTCwI6ZYjPmAv+AUSHyj7CXZC+XY/BykOeAFBU2cVPLGb8nCTdb40j3gZpNh8C24EoDrvEH4PljEdSUjIGLBfTGEgutrYY3gTrLFIgBROThSSI2w98POuCVFFpnCGwvr87IKNngMvgJaulMLioQQxx1kC+MNf4GkFGGLIkSF/rGHomUSeoD1aGfC6Blq6ZagWZYAwhBkLpA9GyriuVtWA3HzoWeK9HnXVWtRbnLuIM0opxH6B/kc5UjAD4tdPPHCS0SqfJ1TBouzMllUfB6oG3NdE2zK0FWaRxhfU3VYep6wKzjwkHyEai9lSF34G3ue8efB4QF1g1ytvT9Q+QPhgWIT8joIe6Cw/fhIzLSS4m70BwpEADPGmns7ZuqQUS4IQhPO5zgfwGaKs6WspTHG4AAAAASUVORK5CYII=) !important;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 378px;
+    top: 10px;
+    background-size: 100%;
 }
 #floatmessagep1{
 height:26px;
